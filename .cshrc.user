@@ -1,0 +1,13 @@
+# git shortcuts
+alias gs 'git status'
+alias gb 'git branch'
+alias gd 'git diff'
+alias go 'git checkout'
+
+alias pro '~/bin/create_ctags_and_cscope.sh `pwd`'
+alias erlpro '~/bin/create_ctags_and_cscope_erl.sh `pwd`'
+setenv GREP_OPTIONS --color=auto
+alias gl 'git log --graph --decorate --pretty=oneline --abbrev-commit --all'
+alias gll 'git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --abbrev-commit --'
+
+alias codegrep 'grep -rn --exclude=tags --exclude=cscope* --exclude=*~ --exclude=*.swp --exclude-dir=*/test/* --exclude-dir=.git --exclude-dir=.svn'
