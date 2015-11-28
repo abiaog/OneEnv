@@ -1,2 +1,6 @@
 # OneEnv
-My personal linux-like development enviroment
+This is my personal linux enviroment, which includes shell, vim, git and firefox.
+In this way, I can get my development enviroment at any linux-like enviroment early.
+
+
+
