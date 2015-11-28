@@ -1,6 +1,8 @@
 #!/bin/bash
 
-ONEENV_BIN=$HOME/bin
+source ./env.sh
+
+echo $ONEENV_BIN
 
 if [ ! -d "$ONEENV_BIN" ]; then
 	mkdir $ONEENV_BIN

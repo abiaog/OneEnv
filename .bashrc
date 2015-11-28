@@ -113,11 +113,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# some cscope ctags aliases
-alias myctags='ctags -R `pwd` '
-alias mycscope='find `pwd` -name "*.*" > cscope.files; cscope -bq '
-alias mypro='myctags; mycscope '
-
 alias h='history'
 
 alias lspath='ls | sed "s:^:`pwd`/:"'
@@ -128,12 +123,11 @@ alias gs='git status'
 alias gb='git branch'
 alias gd='git diff'
 alias go='git checkout'
-
-alias pro='~/bin/create_ctags_and_cscope.sh `pwd`'
-alias erlpro='~/bin/create_ctags_and_cscope_erl.sh `pwd`'
-
 alias gl='git log --graph --decorate --pretty=oneline --abbrev-commit --all'
 alias gll='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --abbrev-commit --'
 
+source env.sh
 
-
+# ctags and cscope
+alias pro='$ONEENV_BIN/create_ctags_and_cscope.sh `pwd`'
+alias erlpro='$ONEENV_BIN/create_ctags_and_cscope_erl.sh `pwd`'

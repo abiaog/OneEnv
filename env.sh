@@ -1,3 +1,4 @@
 #!/bin/bash
-CTAGS_EXE=ctags
-CSCOPE_EXE=cscope
+export CTAGS_EXE=ctags
+export CSCOPE_EXE=cscope
+export ONEENV_BIN="$HOME/bin"

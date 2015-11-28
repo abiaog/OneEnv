@@ -1,5 +1,5 @@
 #!/bin/bash
-# set -x # for debug
+set -x # for debug
 
 source copy.sh
 
