@@ -9,7 +9,7 @@ if [ ! -d "$ONEENV_BIN" ]; then
 fi
 
 declare -a FILE_IN_REPO
-FILE_IN_REPO=("${FILE_IN_REPO[@]}" ".vimrc")
+FILE_IN_REPO=("${FILE_IN_REPO[@]}" "$(pwd)/.vimrc")
 FILE_IN_REPO=("${FILE_IN_REPO[@]}" ".gitconfig")
 FILE_IN_REPO=("${FILE_IN_REPO[@]}" ".bashrc")
 FILE_IN_REPO=("${FILE_IN_REPO[@]}" "env.sh")

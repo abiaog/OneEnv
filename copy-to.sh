@@ -15,3 +15,5 @@ do
 		exit 1
 	fi
 done
+
+git log -1 > $ONEENV_BIN/git-commit-id.txt
