@@ -14,6 +14,10 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
+" Plugin 'vim-orgmode'
+" Plugin 'speeddating.vim'
+Plugin 'vimwiki'
+Plugin 'sotte/presenting.vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'Conque-Shell'
@@ -44,6 +48,8 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
+
+
 " Put your non-Plugin stuff after this line
 set hlsearch
 set number

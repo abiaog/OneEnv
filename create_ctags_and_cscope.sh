@@ -3,7 +3,8 @@
 E_NOFOLDER=66
 CTAG_INPUT_FILES="ctags_input_files.txt"
 
-source env.sh
+CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source $CURRENT_DIR/env.sh
 
 if [ -d "$1" ] # check parameter 1 is folder
 then

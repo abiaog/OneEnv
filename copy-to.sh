@@ -1,7 +1,8 @@
 #!/bin/bash
 set -x # for debug
 
-source copy.sh
+CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source $CURRENT_DIR/copy.sh
 
 length=${#FILE_IN_REPO[@]}
 echo "Copy" $length "File(s):"
