@@ -2,7 +2,7 @@
 set -x # for debug
 
 ONEENV_PATH=.
-source $ONEENV_PATH/copy.sh
+source $ONEENV_PATH/copy-files.sh
 
 echo "Regression Test Begin..."
 length=${#FILE_IN_REPO[@]}

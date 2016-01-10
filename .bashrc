@@ -131,4 +131,6 @@ source ~/.oneenv/env.sh
 # ctags and cscope
 alias pro='$ONEENV_BIN/create_ctags_and_cscope.sh `pwd`'
 alias erlpro='$ONEENV_BIN/create_ctags_and_cscope_erl.sh `pwd`'
+alias shpro='$ONEENV_BIN/create_ctags_and_cscope_erl.sh `pwd`'
+alias shpro='$ONEENV_BIN/create_ctags_and_cscope_sh.sh `pwd`'
 # OneEnv end

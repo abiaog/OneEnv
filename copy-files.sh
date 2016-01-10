@@ -16,6 +16,7 @@ FILE_IN_REPO=("${FILE_IN_REPO[@]}" ".bashrc")
 FILE_IN_REPO=("${FILE_IN_REPO[@]}" "env.sh")
 FILE_IN_REPO=("${FILE_IN_REPO[@]}" "create_ctags_and_cscope.sh")
 FILE_IN_REPO=("${FILE_IN_REPO[@]}" "create_ctags_and_cscope_erl.sh")
+FILE_IN_REPO=("${FILE_IN_REPO[@]}" "create_ctags_and_cscope_sh.sh")
 
 declare -a FILE_IN_REPO_SHADOW
 FILE_IN_REPO_SHADOW=("${FILE_IN_REPO_SHADOW[@]}" "$HOME/.vimrc")
@@ -24,3 +25,4 @@ FILE_IN_REPO_SHADOW=("${FILE_IN_REPO_SHADOW[@]}" "$HOME/.bashrc")
 FILE_IN_REPO_SHADOW=("${FILE_IN_REPO_SHADOW[@]}" "$ONEENV_BIN/env.sh")
 FILE_IN_REPO_SHADOW=("${FILE_IN_REPO_SHADOW[@]}" "$ONEENV_BIN/create_ctags_and_cscope.sh")
 FILE_IN_REPO_SHADOW=("${FILE_IN_REPO_SHADOW[@]}" "$ONEENV_BIN/create_ctags_and_cscope_erl.sh")
+FILE_IN_REPO_SHADOW=("${FILE_IN_REPO_SHADOW[@]}" "$ONEENV_BIN/create_ctags_and_cscope_sh.sh")
