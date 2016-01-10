@@ -3,7 +3,7 @@ This is my personal linux enviroment, which includes shell, vim, git, ctags, csc
 In this way, I can setup my development enviroment at any linux-like system easily.
 
 # Install
-## Comment out files you don't want to copy, for example,
+1. Comment out files you don't want to copy, for example,
 ```bash
 # FILE_IN_REPO=("${FILE_IN_REPO[@]}" ".gitconfig")
 # FILE_IN_REPO=("${FILE_IN_REPO[@]}" ".bashrc")
@@ -11,8 +11,8 @@ In this way, I can setup my development enviroment at any linux-like system easi
 # FILE_IN_REPO_SHADOW=("${FILE_IN_REPO_SHADOW[@]}" "$HOME/.gitconfig")
 # FILE_IN_REPO_SHADOW=("${FILE_IN_REPO_SHADOW[@]}" "$HOME/.bashrc")
 ```
-## Run copy-to.sh
-## Copy below code into .bashrc
+2. Run copy-to.sh
+3. Copy below code into .bashrc
 ```bash
 ## OneEnv begin
 source ~/.oneenv/env.sh
