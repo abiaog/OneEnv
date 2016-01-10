@@ -1,5 +1,5 @@
 #!/bin/bash
-source copy.sh
+source copy-files.sh
 
 length=${#FILE_IN_REPO[@]}
 echo "Copy" $length "File(s):"

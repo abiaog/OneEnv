@@ -2,7 +2,7 @@
 set -x # for debug
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source $CURRENT_DIR/copy.sh
+source $CURRENT_DIR/copy-files.sh
 
 length=${#FILE_IN_REPO[@]}
 echo "Copy" $length "File(s):"

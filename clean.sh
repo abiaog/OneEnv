@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x # for debug
 
-source copy.sh
+source copy-files.sh
 
 length=${#FILE_IN_REPO[@]}
 echo "Remove" $length "File(s):"
