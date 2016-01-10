@@ -126,8 +126,9 @@ alias go='git checkout'
 alias gl='git log --graph --decorate --pretty=oneline --abbrev-commit --all'
 alias gll='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --abbrev-commit --'
 
-source env.sh
-
+# OneEnv begin
+source ~/.oneenv/env.sh
 # ctags and cscope
 alias pro='$ONEENV_BIN/create_ctags_and_cscope.sh `pwd`'
 alias erlpro='$ONEENV_BIN/create_ctags_and_cscope_erl.sh `pwd`'
+# OneEnv end
