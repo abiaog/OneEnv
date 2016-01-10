@@ -12,7 +12,7 @@ In this way, I can setup my development enviroment at any linux-like system easi
 # FILE_IN_REPO_SHADOW=("${FILE_IN_REPO_SHADOW[@]}" "$HOME/.bashrc")
 ```
 ## Run copy-to.sh
-## Copy below into .bashrc
+## Copy below code into .bashrc
 ```bash
 ## OneEnv begin
 source ~/.oneenv/env.sh
