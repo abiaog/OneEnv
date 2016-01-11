@@ -51,20 +51,8 @@ filetype plugin indent on    " required
 
 
 " Put your non-Plugin stuff after this line
-set hlsearch
-set number
-let mapleader=','
+so ~/.oneenv/non-plugin-stuff.vim
 
-map T :ConqueTermTab bash<CR>
-set mouse+=a
 
-" for cscope begin
-set cst
-set csto=0
-cs add ./cscope.out
-" for cscope end
 
-" Status line format:
-" {buffer number}: {file name, relative path to the current working directory}{modified flag}{readonly flag}
-" {help flag}{preview flag} [file type, encoding, format] [current line-total lines, current column][position percentage in file]
-set statusline=%n:\ %f%m%r%h%w\ [%Y,%{&fileencoding},%{&fileformat}]\ [%l-%L,%v][%p%%]
+
