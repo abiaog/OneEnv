@@ -7,7 +7,6 @@ In this way, I can setup my development enviroment at any linux-like system easi
 ```bash
 # FILE_IN_REPO=("${FILE_IN_REPO[@]}" ".gitconfig")
 # FILE_IN_REPO=("${FILE_IN_REPO[@]}" ".bashrc")
-...
 # FILE_IN_REPO_SHADOW=("${FILE_IN_REPO_SHADOW[@]}" "$HOME/.gitconfig")
 # FILE_IN_REPO_SHADOW=("${FILE_IN_REPO_SHADOW[@]}" "$HOME/.bashrc")
 ```
