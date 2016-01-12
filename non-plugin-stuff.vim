@@ -7,8 +7,10 @@ let mapleader=','
 map T :ConqueTermTab bash<CR>
 set mouse+=a
 
+" for disable wrap search
+set nowrapscan
 
-" for cscope begin ......................
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" for cscope begin
 if has("cscope") && filereadable("/usr/bin/cscope")
    set csprg=/usr/bin/cscope
    set csto=0
@@ -32,13 +34,10 @@ map <C-e> :cs find e <C-R>=expand("<cword>")<CR>
 map <C-f> :cs find f <C-R>=expand("<cword>")<CR>
 " map <C-i> :cs find i <C-R>=expand("<cword>")<CR>
 map <C-d> :cs find d <C-R>=expand("<cword>")<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" for cscope end
 
-" for cscope end ......................
 
-" for disable wrap search
-set nowrapscan
-
-" config for status line begin ......................
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" for status line begin
 " Always show the status line
 set laststatus=2
 " Show (partial) command in status line.
@@ -47,4 +46,27 @@ set showcmd
 " {buffer number}: {file name, relative path to the current working directory}{modified flag}{readonly flag}
 " {help flag}{preview flag} [file type, encoding, format] [current line-total lines, current column][position percentage in file]
 set statusline=%n:\ %f%m%r%h%w\ [%Y,%{&fileencoding},%{&fileformat}]\ [%l-%L,%v][%p%%]
-" config for status line end ........................
+
+" This function toggles the 'fullscreen' mode. I sometimes need this, so I can
+" just view my files, without all the 'clutter': line numbers, folding,
+" command line, status line, etc.
+let s:fullscreen_toggle = 0
+function s:RD_Fullscreen ()
+	if s:fullscreen_toggle == 0
+		set cmdheight=1
+		set nonumber
+		set laststatus=0
+		set foldcolumn=0
+		let s:fullscreen_toggle = 1
+	else
+		set cmdheight=2
+		set number
+		set laststatus=2
+		set foldcolumn=4
+		let s:fullscreen_toggle = 0
+	endif
+endfunction
+
+" This adds the new Fullscreen command.
+command Fullscreen call <SID>RD_Fullscreen()
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" for status line end
