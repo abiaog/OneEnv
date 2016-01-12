@@ -1,5 +1,11 @@
 " scripts that are not managed by Vundle
 
+" Only run the script once
+if exists("g:did_non_plugin_stuff")
+  finish
+endif
+let g:did_non_plugin_stuff = 1
+
 set hlsearch
 set number
 let mapleader=','
@@ -54,7 +60,7 @@ let s:fullscreen_toggle = 0
 function s:RD_Fullscreen ()
 	if s:fullscreen_toggle == 0
 		set cmdheight=1
-		set nonumber
+		set number
 		set laststatus=0
 		set foldcolumn=0
 		let s:fullscreen_toggle = 1
