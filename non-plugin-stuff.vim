@@ -76,3 +76,26 @@ endfunction
 " This adds the new Fullscreen command.
 command Fullscreen call <SID>RD_Fullscreen()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" for status line end
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" for mouse invert begin
+function! MouseInvert()
+  let mouse_value = &mouse
+  if mouse_value == "a"
+    set mouse-=a
+    set nonumber
+    echom "mouse disabled"
+  else
+    set mouse+=a
+    set number
+    echom "mouse enabled"
+  endif
+endfunction
+
+map mi :call MouseInvert()<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" for mouse invert end
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" for presenting begin
+au FileType rst let b:presenting_slide_separator = '\v(^|\n)\~{4,}'
+autocmd BufNewFile,BufReadPost *.markdown set filetype=markdown
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" for presenting end
