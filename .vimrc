@@ -18,12 +18,14 @@ Plugin 'tpope/vim-fugitive'
 " Plugin 'speeddating.vim'
 Plugin 'vimwiki'
 Plugin 'sotte/presenting.vim'
+Plugin 'plantuml-syntax'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'Conque-Shell'
 Plugin 'Mark'
 Plugin 'pathogen.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'c.vim'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)

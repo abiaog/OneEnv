@@ -10,7 +10,9 @@ In this way, I can setup my development enviroment at any linux-like system easi
 # FILE_IN_REPO_SHADOW=("${FILE_IN_REPO_SHADOW[@]}" "$HOME/.gitconfig")
 # FILE_IN_REPO_SHADOW=("${FILE_IN_REPO_SHADOW[@]}" "$HOME/.bashrc")
 ```
+
 2. Run copy-to.sh
+
 3. Copy below code into .bashrc
 ```bash
 ## OneEnv begin
