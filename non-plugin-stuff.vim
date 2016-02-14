@@ -99,3 +99,6 @@ map mi :call MouseInvert()<CR>
 au FileType rst let b:presenting_slide_separator = '\v(^|\n)\~{4,}'
 autocmd BufNewFile,BufReadPost *.markdown set filetype=markdown
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" for presenting end
+
+" black theme
+colo torte
