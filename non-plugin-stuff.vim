@@ -102,3 +102,10 @@ autocmd BufNewFile,BufReadPost *.markdown set filetype=markdown
 
 " black theme
 colo torte
+
+" For PlantUML begin
+" curl the jar from http://plantuml.com/ and put it under .oneenv
+" ......
+" set makeprg=java\ -jar\ c:\work\private\tools\plantuml\plantuml.jar
+" map <F5> :make %<CR>
+" For PlantUML end
