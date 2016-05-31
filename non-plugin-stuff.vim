@@ -109,3 +109,22 @@ colo torte
 " set makeprg=java\ -jar\ c:\work\private\tools\plantuml\plantuml.jar
 " map <F5> :make %<CR>
 " For PlantUML end
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Code folding begin
+set foldenable
+
+" Fold column width
+set foldcolumn=4
+
+" Make folding indent sensitive
+set foldmethod=indent
+
+set foldminlines=2
+
+" Folds with a higher level will be automatically closed.
+set foldlevel=4
+
+" Don't auto-open folds
+set foldopen=
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Code folding end
