@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+Plugin 'kalafut/vim-taskjuggler'
 Plugin 'tpope/vim-fugitive'
 " Plugin 'vim-orgmode'
 " Plugin 'speeddating.vim'
@@ -26,6 +27,8 @@ Plugin 'Mark'
 Plugin 'pathogen.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'c.vim'
+Plugin 'genutils'  " General utility functions
+Plugin 'lookupfile'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
