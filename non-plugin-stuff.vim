@@ -8,6 +8,7 @@ let g:did_non_plugin_stuff = 1
 
 set hlsearch
 set number
+set relativenumber
 let mapleader=','
 
 map T :ConqueTermTab bash<CR>
