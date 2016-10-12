@@ -32,6 +32,7 @@ Plugin 'lookupfile'
 Plugin 'Quich-Filter' " used for log analysis
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
+" Plugin 'git://github.com/suan/vim-instant-markdown.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
