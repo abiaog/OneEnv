@@ -29,6 +29,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'c.vim'
 Plugin 'genutils'  " General utility functions
 Plugin 'lookupfile'
+Plugin 'Quich-Filter' " used for log analysis
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)

@@ -129,3 +129,26 @@ set foldlevel=4
 " Don't auto-open folds
 set foldopen=
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Code folding end
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" jump list
+"" http://vim.wikia.com/wiki/Jumping_to_previously_visited_locations
+"function! GotoJump()
+"	jumps
+"	let j = input("Please select your jump: ")
+"	if j != ''
+"		let pattern = '\v\c^\+'
+"		if j =~ pattern
+"			let j = substitute(j, pattern, '', 'g')
+"			execute "normal " . j . "\<c-i>"
+"		else
+"			execute "normal " . j . "\<c-o>"
+"		endif
+"	endif
+"endfunction
+
+"nmap <Leader>j :call GotoJump()<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" jump list
+
+
