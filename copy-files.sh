@@ -1,7 +1,8 @@
 #!/bin/bash
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source $CURRENT_DIR/env.sh
+source $CURRENT_DIR/env.sh # for bash
+# source $CURRENT_DIR/env-tcsh.tcsh # for tcsh
 
 echo $ONEENV_BIN
 
