@@ -103,6 +103,7 @@ autocmd BufNewFile,BufReadPost *.markdown set filetype=markdown
 
 " black theme
 colo torte
+syntax on " for vim version 8.0
 
 " For PlantUML begin
 " curl the jar from http://plantuml.com/ and put it under .oneenv
