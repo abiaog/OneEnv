@@ -11,6 +11,8 @@ sudo apt install cscope
 
 source ${CURRENT_DIR}/clone-and-install-vim.sh
 
+source ${CURRENT_DIR}/copy-to.sh
+
 # refer to https://github.com/VundleVim/Vundle.vim
 if [ -d $VUNDLE_FOLDER ]; then
 	echo "Vundle was installed!"
@@ -20,4 +22,5 @@ else
 
 fi
 
-source ${CURRENT_DIR}/copy-to.sh
+# install Vundle plugins
+vim +PluginInstall +qall

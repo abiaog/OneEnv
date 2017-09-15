@@ -28,16 +28,16 @@ Plugin 'pathogen.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'c.vim'
 Plugin 'genutils'  " General utility functions
-Plugin 'lookupfile'
-Plugin 'Quich-Filter' " used for log analysis
+" Plugin 'lookupfile'
+" Plugin 'Quich-Filter' " used for log analysis
 " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+" Plugin 'git://git.wincent.com/command-t.git'
 " Plugin 'git://github.com/suan/vim-instant-markdown.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
 " Plugin 'user/L9', {'name': 'newL9'}
 
