@@ -9,8 +9,10 @@ sudo apt install exuberant-ctags
 echo "install cscope..."
 sudo apt install cscope
 
+cd ${CURRENT_DIR}
 source ${CURRENT_DIR}/clone-and-install-vim.sh
 
+cd ${CURRENT_DIR}
 source ${CURRENT_DIR}/copy-to.sh
 
 # refer to https://github.com/VundleVim/Vundle.vim
